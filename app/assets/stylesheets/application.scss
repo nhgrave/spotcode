@@ -1,1 +1,8 @@
-@import "bulma/bulma"
+@import "bulma";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "./**/*";
+
+html {
+  background-color: $black;
+}

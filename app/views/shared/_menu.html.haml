@@ -1,0 +1,19 @@
+%nav.columns.navbar.is-fixed-top.is-mobile.is-dark
+  .column.is-2-desktop.logo
+    = image_tag "logo.png"
+
+  .column.menu-button
+    - if user_signed_in?
+      .dropdown.is-hoverable.is-pulled-right.is-right
+        .dropdown-trigger
+          = link_to 'javascript:void(0)', class: "icon is-large", aria: { haspopup: "true", controls: "dropdown-menu" } do
+            %i.fas.fa-cog.fa-2x.has-text-white-bis
+
+        .dropdown-menu#dropdown-menu{ role: "menu" }
+          .dropdown-content
+            = link_to "Profile", edit_user_registration_path, class: "dropdown-item"
+            %hr.dropdown-divider
+            = link_to "Logout", destroy_user_session_path, method: :delete, class: "dropdown-item"
+
+    - else
+      = link_to "ENTRAR", new_user_session_path, class: "button is-pulled-right is-outlined is-white"
