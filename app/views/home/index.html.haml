@@ -2,18 +2,17 @@
   .hero-body.has-text-centered
     .container
       %h1.title.has-text-weight-light
-        SEU APP DE
+        = t '.your_app_for'
         %br
-        %span.has-text-primary MÚSICA
+        %span.has-text-primary
+          = t '.musics'
 
       %br
 
       %h2.subtitle.has-text-weight-light.white
-        Álbuns • Lançamentos
-        %br
-        Mais tocadas • Recomendadas
+        = t('.subtitles').join('<br>').html_safe
 
       %br
       %br
 
-      = link_to "CADASTRAR AGORA", new_user_registration_path, class: "button is-medium is-outlined is-primary"
+      = link_to t('.register_now'), new_user_registration_path, class: "button is-medium is-outlined is-primary"

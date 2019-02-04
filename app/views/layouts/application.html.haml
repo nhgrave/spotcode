@@ -1,4 +1,4 @@
-!DOCTYPE html
+!!!
 %html
   %head
     %title Spotcode
@@ -13,4 +13,8 @@
 
   %body
     = render "shared/menu"
-    = yield
+
+    %main#main
+      = yield
+
+    = render "shared/toolbar"

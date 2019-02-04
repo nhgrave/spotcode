@@ -1,8 +1,8 @@
-%nav.columns.navbar.is-fixed-top.is-mobile.is-dark
-  .column.is-2-desktop.logo
+%nav.columns.level.navbar.is-fixed-top.is-mobile.is-dark
+  .column.is-2-desktop.logo.level-item
     = image_tag "logo.png"
 
-  .column.menu-button
+  .column.menu-button.level-item
     - if user_signed_in?
       .dropdown.is-hoverable.is-pulled-right.is-right
         .dropdown-trigger
@@ -11,9 +11,9 @@
 
         .dropdown-menu#dropdown-menu{ role: "menu" }
           .dropdown-content
-            = link_to "Profile", edit_user_registration_path, class: "dropdown-item"
+            = link_to t('.profile'), edit_user_registration_path, class: "dropdown-item"
             %hr.dropdown-divider
-            = link_to "Logout", destroy_user_session_path, method: :delete, class: "dropdown-item"
+            = link_to t('.logout'), destroy_user_session_path, method: :delete, class: "dropdown-item"
 
     - else
-      = link_to "ENTRAR", new_user_session_path, class: "button is-pulled-right is-outlined is-white"
+      = link_to t('.sign_in'), new_user_session_path, class: "button is-pulled-right is-outlined is-white"

@@ -6,3 +6,11 @@
 html {
   background-color: $black;
 }
+
+main#main {
+  padding-top: 80px
+}
+
+.hero.is-fullheight {
+  min-height: calc(100vh - 80px);
+}
