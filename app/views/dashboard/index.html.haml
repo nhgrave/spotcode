@@ -1,0 +1,14 @@
+%section.section.has-text-white.has-text-centered#dashboard
+  .albums
+    %h2.subtitle.has-text-white= t '.recently_heard'
+
+    .columns.is-multiline.is-mobile
+      = render @recent_albums
+
+  %hr
+
+  .albums
+    %h2.subtitle.has-text-white= t '.recommended'
+
+    .columns.is-multiline.is-mobile
+      = render @recommended_albums

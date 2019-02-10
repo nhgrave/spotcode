@@ -4,13 +4,19 @@
 @import "./**/*";
 
 html {
-  background-color: $black;
-}
-
-main#main {
-  padding-top: 80px
+  background-color: $dark;
 }
 
 .hero.is-fullheight {
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
+}
+
+#dashboard {
+  h2 {
+    margin: 48px 0;
+  }
+
+  .albums {
+    margin-bottom: 48px
+  }
 }

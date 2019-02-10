@@ -1,0 +1,5 @@
+pt-BR:
+  dashboard:
+    index:
+      recently_heard: Tocadas Recentemente
+      recommended: Recomendadas
