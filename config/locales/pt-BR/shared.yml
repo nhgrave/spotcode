@@ -4,3 +4,8 @@ pt-BR:
       profile: Perfil
       logout: Sair
       sign_in: ENTRAR
+
+    tabs:
+      albums: Álbums
+      artists: Artistas
+      songs: Músicas

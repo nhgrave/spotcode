@@ -1,0 +1,13 @@
+%section.section.has-text-white.has-text-centered
+  %h2.is-size-5.has-text-weight-light= t '.results'
+
+  %br
+
+  .field
+    = form_with url: searches_path, method: :get, local: true do |f|
+      %p.control.has-icons-right
+        = f.text_field :search, class: "input is-medium", type: "text", placeholder: t('.placeholder.search')
+        %span.icon.is-small.is-right
+          %i.fas.fa-search
+
+  = render "shared/tabs", artists: @artists, songs: @songs, albums: @albums
