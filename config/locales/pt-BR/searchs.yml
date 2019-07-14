@@ -1,9 +1,10 @@
 pt-BR:
-  searchs:
+  search:
     index:
       results: Resultados
       placeholder:
         search: Álbuns, Artistas ou Músicas
+
     new:
       search: Buscar
       placeholder:

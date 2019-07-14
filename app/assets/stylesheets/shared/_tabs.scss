@@ -1,0 +1,33 @@
+.tabs.shared {
+  li {
+    a {
+      color: $white;
+
+      &:hover {
+        color: $primary;
+        border-bottom-color: $primary;
+      }
+    }
+
+    &.is-active {
+      a {
+        color: $primary;
+        border-bottom-color: $primary;
+      }
+    }
+  }
+}
+
+.tabs-content {
+  .tab-item {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    button#play-all{
+      margin-bottom: 15px;
+    }
+  }
+}

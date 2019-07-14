@@ -2,15 +2,15 @@
   %ul
     - if albums
       %li.is-active
-        = link_to "#albums", t('shared.tabs.albums')
+        = link_to t('shared.tabs.albums'), "javascript:void(0);", target: "#albums"
 
     - if artists
       %li
-        = link_to "#artists", t('shared.tabs.artists')
+        = link_to t('shared.tabs.artists'), "javascript:void(0);", target: "#artists"
 
     - if songs
       %li
-        = link_to "#songs", t('shared.tabs.songs')
+        = link_to t('shared.tabs.songs'), "javascript:void(0);", target: "#songs"
 
 .tabs-content
   - if albums

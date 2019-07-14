@@ -4,7 +4,7 @@
   %br
 
   .field
-    = form_with url: searches_path, method: :get, local: true do |f|
+    = form_with url: search_index_path, method: :get, local: true do |f|
       %p.control.has-icons-right
         = f.text_field :search, class: "input is-medium", type: "text", placeholder: t('.placeholder.search')
         %span.icon.is-small.is-right
@@ -13,5 +13,5 @@
   .columns.is-multiline.is-mobile
     - @categories.each do |category|
       .column.is-half-mobile.is-one-quarter-desktop
-        = link_to category do
+        = link_to "#category" do
           = image_tag url_for(category.image)
