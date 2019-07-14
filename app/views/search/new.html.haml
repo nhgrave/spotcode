@@ -13,5 +13,5 @@
   .columns.is-multiline.is-mobile
     - @categories.each do |category|
       .column.is-half-mobile.is-one-quarter-desktop
-        = link_to "#category" do
+        = link_to category do
           = image_tag url_for(category.image)
