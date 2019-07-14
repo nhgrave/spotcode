@@ -1,0 +1,6 @@
+pt-BR:
+  activerecord:
+    models:
+      album:
+        one: Album
+        other: Albuns
