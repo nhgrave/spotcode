@@ -4,3 +4,7 @@ pt-BR:
       album:
         one: Album
         other: Albuns
+
+      song:
+        one: Música
+        other: Músicas

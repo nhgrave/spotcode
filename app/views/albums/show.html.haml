@@ -1,0 +1,24 @@
+%section.section.has-text-white
+  .columns.has-text-centered
+    .column.is-half-mobile.is-offset-one-quarter-mobile.is-2-desktop.is-offset-5-desktop
+      = image_tag url_for(@album.cover)
+
+      %p.is-size-6.has-text-weight-semibold
+        = @album.title
+
+  %br
+
+  %h2.is-size-5.has-text-weight-bold
+    = tm :song
+
+  %br
+
+  .columns.is-multiline.has-text-centered
+    .column.is-12
+      %button#play-all.button.is-primary.is-medium
+        %span.icon
+          %i.fas.fa-play-circle
+
+        %span= t 'text.play_all'
+
+    = render @album.songs
