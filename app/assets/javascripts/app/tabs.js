@@ -1,7 +1,7 @@
 document.addEventListener("turbolinks:load", function () {
   document.addEventListener('click', function(e) {
     if (e.target.nodeName === "A" && e.target.closest(".tabs.shared") !== null) {
-      const target = e.target.getAttribute("target");
+      const target = e.target.getAttribute("data-target");
       const listItems = document.querySelectorAll(".tabs.shared li");
       const contentitems = document.querySelectorAll(".tabs-content .tab-item");
 

@@ -1,16 +1,13 @@
 .tabs.is-medium.is-centered.shared
   %ul
     - if albums
-      %li.is-active
-        = link_to t('shared.tabs.albums'), "javascript:void(0);", target: "#albums"
+      %li.is-active= link_to t('shared.tabs.albums'), "javascript:void(0);", data: { target: "#albums" }
 
     - if artists
-      %li
-        = link_to t('shared.tabs.artists'), "javascript:void(0);", target: "#artists"
+      %li= link_to t('shared.tabs.artists'), "javascript:void(0);", data: { target: "#artists" }
 
     - if songs
-      %li
-        = link_to t('shared.tabs.songs'), "javascript:void(0);", target: "#songs"
+      %li= link_to t('shared.tabs.songs'), "javascript:void(0);", data: { target: "#songs" }
 
 .tabs-content
   - if albums
