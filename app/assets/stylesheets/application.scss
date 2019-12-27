@@ -22,11 +22,11 @@ main#main {
 
 #dashboard {
   h2 {
-    margin: 48px 0;
+    margin: 3rem 0;
   }
 
-  .albums {
-    margin-bottom: 48px
+  hr {
+    margin-top: 3rem;
   }
 }
 
@@ -36,10 +36,6 @@ main#main {
 
 .song-item {
   border-top: 1px solid $white;
-
-  .play-button {
-    margin-top: 12px;
-  }
 
   &:first-child {
     border-top: none;

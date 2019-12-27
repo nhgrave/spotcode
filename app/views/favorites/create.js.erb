@@ -1,0 +1,6 @@
+var el = document.querySelector("a[data-favoritable='<%=j dom_id(@favoritable.favoritable) %>']");
+el.dataset.method = 'delete';
+
+var icon = el.querySelector("i");
+icon.classList.remove('far');
+icon.classList.add('fas');

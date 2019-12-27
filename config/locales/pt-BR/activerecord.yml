@@ -5,6 +5,10 @@ pt-BR:
         one: Album
         other: Albuns
 
+      favorite:
+        one: Favorito
+        other: Favoritos
+
       song:
         one: Música
         other: Músicas
