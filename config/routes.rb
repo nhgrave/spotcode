@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     root to: "dashboard#index", as: :authenticated_root
 
     resources :albums, only: [ :show ] do
+      resource :recently_heards, only: [ :create ]
       resource :favorite, only: [ :create, :destroy ], defaults: { format: :js, favoritable_type: "Album" }
     end
 

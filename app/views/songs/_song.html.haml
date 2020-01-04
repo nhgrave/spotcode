@@ -1,9 +1,7 @@
 .column.is-full.has-text-left.song-item
   .columns.is-vcentered.is-mobile
     .column.is-narrow
-      -# TODO: add { song: url_for(song.file), url: album_recently_heards_path(song.album) } to link data below
-      = link_to "#song", class: "has-text-white", data: {  } do
-        %i.fas.fa-play-circle.fa-2x
+      = play_button song
 
     .column
       %h2.is-size-5= song.title
